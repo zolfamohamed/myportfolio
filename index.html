@@ -8,7 +8,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <!-- bootstrab CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -34,9 +35,11 @@
 
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+    rel="stylesheet">
 
 
   <!-- Main CSS File -->
@@ -81,10 +84,11 @@
         <div class="row justify-content-center">
           <div class="col-lg-9">
             <h2>Zolfa Mohamed Mahmoud</h2>
-            <p>I'm <span class="typed" data-typed-items="Full Stack Developer, Front-End, Back-End, Freelancer">Full Stack
+            <p>I'm <span class="typed" data-typed-items="Full Stack Developer, Front-End, Back-End, Freelancer">Full
+                Stack
                 Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
-              <a href="https://github.com/zolfamohamed"><i class="fa-brands fa-github" ></i></a>
+              <a href="https://github.com/zolfamohamed"><i class="fa-brands fa-github"></i></a>
               <a href="https://www.linkedin.com/in/zolfa-mohamed-mahmoud-0878a2312/"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
@@ -202,80 +206,39 @@
 
     </section> -->
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <!-- Section Title -->
+    <section class="skills-section" id="skills">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>The web development skills I use for both front-end and back-end work.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Python</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>MySql</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
+        <h2 class="skills-heading fw-bold">My Skills</h2>
+        <p class="skills-subheading">Technologies I use in both Front-end and Back-end development.</p>
       </div>
 
-    </section><!-- /Skills Section -->
+
+      <div class="skills-grid">
+        <!-- Front-end Skills -->
+        <div class="skill-box animate-on-scroll">
+          <h3><i class="fas fa-code"></i> Front-End</h3>
+          <ul>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+          </ul>
+        </div>
+
+        <!-- Back-end Skills -->
+        <div class="skill-box animate-on-scroll delay">
+          <h3><i class="fas fa-server"></i> Back-End</h3>
+          <ul>
+            <li><i class="fab fa-php"></i> PHP</li>
+            <li><i class="fas fa-database"></i> MySQL</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fab fa-laravel"></i> Laravel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
@@ -671,7 +634,7 @@
         <a href=""><i class="bi bi-facebook"></i></a>
         <a href=""><i class="bi bi-instagram"></i></a>
         <a href=""><i class="bi bi-skype"></i></a> -->
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/zolfa-mohamed-mahmoud-0878a2312/"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
         <!-- <div class="copyright">
@@ -710,6 +673,22 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    const elements = document.querySelectorAll('.animate-on-scroll');
+
+    const showOnScroll = () => {
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', showOnScroll);
+    window.addEventListener('load', showOnScroll);
+  </script>
+
 
 </body>
 

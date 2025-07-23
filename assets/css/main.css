@@ -663,38 +663,91 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+/* === Skills Section Main Styling === */
+.skills-section {
+  background: #f9f9fb;
+  padding: 60px 20px;
+  text-align: center;
+ font-family:var(--default-font);
 }
 
-.skills .progress .skill {
-  color: var(--heading-color);
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
+.skills-heading {
   font-family: var(--heading-font);
+  color: #3A0519;
+  margin-bottom: 10px;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skills-subheading {
+  font-size: 1rem;
+  color: var(--default-color);
+  margin-bottom: 40px;
 }
 
-.skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
+/* === Grid Layout === */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
+/* === Skill Card Box === */
+.skill-box {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 20px;
+  width: 280px;
+  text-align: left;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.6s ease-out;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.skill-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-box h3 {
+  font-size: 1.4rem;
+  color:var(--default-color);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-box li {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color:var(--default-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-box i {
+  color:var(--default-color);
+  font-size: 1.1rem;
+}
+
+/* Optional delay class for animation sequence */
+.skill-box.delay {
+  transition-delay: 0.2s;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*--------------------------------------------------------------
