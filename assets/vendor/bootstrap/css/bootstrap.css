@@ -707,8 +707,8 @@ progress {
 }
 
 .img-fluid {
-  border-radius: 10px;
-  max-width: 100%;
+  border-radius: 50px !important;
+  max-width:80% !important;
   height: auto;
 }
 
